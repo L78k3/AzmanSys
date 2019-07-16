@@ -51,7 +51,7 @@
             // 
             // tbDepartureCity
             // 
-            this.tbDepartureCity.Location = new System.Drawing.Point(534, 62);
+            this.tbDepartureCity.Location = new System.Drawing.Point(534, 66);
             this.tbDepartureCity.Name = "tbDepartureCity";
             this.tbDepartureCity.Size = new System.Drawing.Size(100, 20);
             this.tbDepartureCity.TabIndex = 24;
@@ -68,7 +68,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(447, 65);
+            this.label4.Location = new System.Drawing.Point(447, 69);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(74, 13);
             this.label4.TabIndex = 19;
@@ -155,7 +155,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(457, 30);
+            this.label6.Location = new System.Drawing.Point(447, 30);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(31, 13);
             this.label6.TabIndex = 28;

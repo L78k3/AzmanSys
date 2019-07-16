@@ -48,7 +48,7 @@ namespace AzmanSys
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-           
+            mysqlConn.deleteFlight(tbFlightID.Text);
         }
 
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)

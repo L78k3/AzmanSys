@@ -27,7 +27,12 @@ namespace AzmanSys
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-           
+            if (mysqlConn.connOpen() == true)
+            {
+                mysqlConn.insertBooking(tbCustomerID.Text, tbFlightID.Text, dtBookingDateTime.Text, tbBookingTotalCost.Text);
+                dataGridView1.DataSource = mysqlConn.qry("SELECT * FROM `tblBooking`").Tables[0];
+            }
+            mysqlConn.connClose();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
