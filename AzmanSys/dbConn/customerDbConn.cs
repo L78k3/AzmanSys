@@ -28,7 +28,7 @@ namespace AzmanSys
             comm.CommandText = "UPDATE `tblCustomer` SET `CusFName`=@FName,`CusLName`=@LName,`TelNum`=@CusLName,";
             comm.Parameters.AddWithValue("@CusFName", FName);
             comm.Parameters.AddWithValue("@CusLName", LName);
-            comm.Parameters.AddWithValue("@CusTelNum", TelNum);
+            comm.Parameters.AddWithValue("@CusTelNum", Tel);
             comm.ExecuteNonQuery();
             connClose();
         }

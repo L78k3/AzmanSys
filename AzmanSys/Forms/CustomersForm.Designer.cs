@@ -163,6 +163,7 @@
             this.btnMainMenu.TabIndex = 36;
             this.btnMainMenu.Text = "Back to Main Menu";
             this.btnMainMenu.UseVisualStyleBackColor = true;
+            this.btnMainMenu.Click += new System.EventHandler(this.btnMainMenu_Click_1);
             // 
             // btnExit
             // 
@@ -172,6 +173,7 @@
             this.btnExit.TabIndex = 37;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click_1);
             // 
             // CustomersForm
             // 

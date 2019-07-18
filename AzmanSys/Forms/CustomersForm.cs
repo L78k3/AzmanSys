@@ -48,7 +48,11 @@ namespace AzmanSys
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-           
+           if (mysqlConn.connOpen() == true)
+            {
+                mysqlConn.updateCustomer(tbCustID.Text, tbFName.Text, tbLName.Text, tbTel.Text);
+                dataGridView1.DataSource = mysqlConn.qry("SELECT * FROM `tblCustomer`").Tables[0];
+            }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -71,6 +75,17 @@ namespace AzmanSys
         }
 
         private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMainMenu_Click_1(object sender, EventArgs e)
+        {
+            Close();
+            (new MainForm()).Show();
+        }
+
+        private void btnExit_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
         }
