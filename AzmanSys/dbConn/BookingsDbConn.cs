@@ -12,7 +12,7 @@ namespace AzmanSys
         public void insertBooking(string CusID, string FlightID, string Booking_DateTime, string Total_BookingCost)
         {
             MySqlCommand comm = conn.CreateCommand();
-            comm.CommandText = "INSERT INTO `tblCustomer` (`CusID`, `FlightID`, `Booking_DateTime`, `Total_BookingCost`) VALUES (NULL,@CusID, @FlightID, @Booking_DateTime, @Total_BookingCost);";
+            comm.CommandText = "INSERT INTO `tblBooking` (`CusID`, `FlightID`, `Booking_DateTime`, `Total_BookingCost`) VALUES (@CusID, @FlightID, @Booking_DateTime, @Total_BookingCost);";
             comm.Parameters.AddWithValue("@CusID", CusID);
             comm.Parameters.AddWithValue("@FlightID", FlightID);
             comm.Parameters.AddWithValue("@Booking_DateTime", Booking_DateTime);
