@@ -25,9 +25,10 @@ namespace AzmanSys
         public void updateCustomer(string CusID, string FName, string LName, string Tel)
         {
             MySqlCommand comm = conn.CreateCommand();
-            comm.CommandText = "UPDATE `tblCustomer` SET `CusFName`=@FName,`CusLName`=@LName,`TelNum`=@CusLName,";
-            comm.Parameters.AddWithValue("@CusFName", FName);
-            comm.Parameters.AddWithValue("@CusLName", LName);
+            comm.CommandText = "UPDATE `tblCustomer` SET `CusFName`=@FName,`CusLName`=@LName,`CusTelNum`=@CusTelNum WHERE `CusID`=@CusID";
+            comm.Parameters.AddWithValue("@CusID", CusID);
+            comm.Parameters.AddWithValue("@FName", FName);
+            comm.Parameters.AddWithValue("@LName", LName);
             comm.Parameters.AddWithValue("@CusTelNum", Tel);
             comm.ExecuteNonQuery();
             connClose();
