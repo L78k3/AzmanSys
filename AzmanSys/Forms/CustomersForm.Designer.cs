@@ -42,6 +42,8 @@
             this.tbTel = new System.Windows.Forms.TextBox();
             this.btnMainMenu = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.tbNat = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,7 +112,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(53, 108);
+            this.label3.Location = new System.Drawing.Point(53, 100);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 13);
             this.label3.TabIndex = 6;
@@ -119,7 +121,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(53, 145);
+            this.label4.Location = new System.Drawing.Point(53, 134);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(98, 13);
             this.label4.TabIndex = 7;
@@ -143,14 +145,14 @@
             // 
             // tbLName
             // 
-            this.tbLName.Location = new System.Drawing.Point(157, 108);
+            this.tbLName.Location = new System.Drawing.Point(157, 97);
             this.tbLName.Name = "tbLName";
             this.tbLName.Size = new System.Drawing.Size(100, 20);
             this.tbLName.TabIndex = 10;
             // 
             // tbTel
             // 
-            this.tbTel.Location = new System.Drawing.Point(157, 142);
+            this.tbTel.Location = new System.Drawing.Point(157, 131);
             this.tbTel.Name = "tbTel";
             this.tbTel.Size = new System.Drawing.Size(100, 20);
             this.tbTel.TabIndex = 11;
@@ -175,11 +177,29 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click_1);
             // 
+            // tbNat
+            // 
+            this.tbNat.Location = new System.Drawing.Point(157, 157);
+            this.tbNat.Name = "tbNat";
+            this.tbNat.Size = new System.Drawing.Size(100, 20);
+            this.tbNat.TabIndex = 39;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(53, 160);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(56, 13);
+            this.label5.TabIndex = 38;
+            this.label5.Text = "Nationality";
+            // 
             // CustomersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.tbNat);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnMainMenu);
             this.Controls.Add(this.tbTel);
@@ -218,5 +238,7 @@
         private System.Windows.Forms.TextBox tbTel;
         private System.Windows.Forms.Button btnMainMenu;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.TextBox tbNat;
+        private System.Windows.Forms.Label label5;
     }
 }

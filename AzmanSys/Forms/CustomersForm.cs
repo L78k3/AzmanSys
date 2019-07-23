@@ -29,7 +29,7 @@ namespace AzmanSys
         {
             if (mysqlConn.connOpen() == true)
             {
-                mysqlConn.insertCustomer(tbFName.Text, tbLName.Text, tbTel.Text);
+                mysqlConn.insertCustomer(tbFName.Text, tbLName.Text, tbTel.Text, tbNat.Text);
                 dataGridView1.DataSource = mysqlConn.qry("SELECT * FROM `tblCustomer`").Tables[0];
             }
             mysqlConn.connClose();
@@ -43,6 +43,7 @@ namespace AzmanSys
             tbFName.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
             tbLName.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
             tbTel.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+            tbNat.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
             }
         }
 
@@ -50,7 +51,7 @@ namespace AzmanSys
         {
            if (mysqlConn.connOpen() == true)
             {
-                mysqlConn.updateCustomer(tbCustID.Text, tbFName.Text, tbLName.Text, tbTel.Text);
+                mysqlConn.updateCustomer(tbCustID.Text, tbFName.Text, tbLName.Text, tbTel.Text, tbNat.Text);
                 dataGridView1.DataSource = mysqlConn.qry("SELECT * FROM `tblCustomer`").Tables[0];
             }
         }
